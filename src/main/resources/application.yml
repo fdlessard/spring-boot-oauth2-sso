@@ -1,0 +1,28 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            client-id: de5c5667babc12b55474
+            client-secret: 5b95cc5c48d09a18570f6a9f1be3b6d9a86efc7b
+          facebook:
+            client-id: de5c5667babc12b55474
+            client-secret: 5b95cc5c48d09a18570f6a9f1be3b6d9a86efc7b
+          google:
+            client-id: de5c5667babc12b55474
+            client-secret: 5b95cc5c48d09a18570f6a9f1be3b6d9a86efc7b
+          okta:
+            client-name: Okta
+            client-id: 0oa2a55teeqhX2CcY4x6
+            client-secret: HvpaK1PR-wWm6dzioLSjXFKMVkNiz6-emo7YHc6A
+            redirect-uri: http://localhost:8080/authorization-code/callback
+        provider:
+          okta:
+            issuer-uri: https://dev-275566.okta.com/oauth2/default
+            authorization-uri: https://dev-275566.okta.com/oauth2/default/v1/authorize
+            token-uri: https://dev-275566.okta.com/oauth2/default/v1/token
+
+
+
+
