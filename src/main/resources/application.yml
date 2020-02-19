@@ -4,18 +4,18 @@ spring:
       client:
         registration:
           github:
-            client-id: de5c5667babc12b55474
-            client-secret: 5b95cc5c48d09a18570f6a9f1be3b6d9a86efc7b
+            client-id: ${github-client-id}
+            client-secret: ${github-client-secret}
           facebook:
-            client-id: 852762475240278
-            client-secret: 3d5e3165a8ea500a7fad14772337b5b7
+            client-id: ${facebook-client-id}
+            client-secret: ${facebook-client-secret}
           google:
-            client-id: 295482228992-7o15lvee064tqbvl0capjcj9mdj955pr.apps.googleusercontent.com
-            client-secret: YtLFNWnhx0zbrmxE4L8Wv6aU
+            client-id: ${google-client-id}
+            client-secret: ${google-client-secret}
           okta:
             client-name: Okta
-            client-id: 0oa2a55teeqhX2CcY4x6
-            client-secret: HvpaK1PR-wWm6dzioLSjXFKMVkNiz6-emo7YHc6A
+            client-id: ${okta-client-id}
+            client-secret: ${okta-client-secret}
             scope: openid
             redirect-uri: http://localhost:8080/login/oauth2/code/okta
 
