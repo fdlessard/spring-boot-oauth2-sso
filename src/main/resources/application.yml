@@ -7,23 +7,21 @@ spring:
             client-id: de5c5667babc12b55474
             client-secret: 5b95cc5c48d09a18570f6a9f1be3b6d9a86efc7b
           facebook:
-            client-id: de5c5667babc12b55474
-            client-secret: 5b95cc5c48d09a18570f6a9f1be3b6d9a86efc7b
+            client-id: 852762475240278
+            client-secret: 3d5e3165a8ea500a7fad14772337b5b7
           google:
-            client-id: de5c5667babc12b55474
-            client-secret: 5b95cc5c48d09a18570f6a9f1be3b6d9a86efc7b
+            client-id: 295482228992-7o15lvee064tqbvl0capjcj9mdj955pr.apps.googleusercontent.com
+            client-secret: YtLFNWnhx0zbrmxE4L8Wv6aU
           okta:
             client-name: Okta
             client-id: 0oa2a55teeqhX2CcY4x6
             client-secret: HvpaK1PR-wWm6dzioLSjXFKMVkNiz6-emo7YHc6A
             scope: openid
-            redirect-uri: "{baseUrl}/login"
-#             authorization-grant-type: authorization_code
+            redirect-uri: http://localhost:8080/login/oauth2/code/okta
 
         provider:
           okta:
-#            issuer-uri: https://dev-275566.okta.com
-            authorization-uri: https://dev-275566.okta.com/oauth2/default/v1/authorize?nonce=WBYA
+            authorization-uri: https://dev-275566.okta.com/oauth2/default/v1/authorize
             token-uri: https://dev-275566.okta.com/oauth2/default/v1/token
             user-info-uri: https://dev-275566.okta.com/oauth2/default/v1/userinfo
             user-name-attribute: sub
